@@ -1,10 +1,3 @@
-/**
- * Signal digital détection d'eau sur P0
- * 
- * Signal analogique humidité de l'eau sur P1
- * 
- * Fonction de conversion pour l'humidité
- */
 // Valeur dans l'eau
 // Fonction de conversion pour l'humidité
 // return humidity
@@ -21,6 +14,13 @@ function convertMoisture (rawValue: number) {
     }
     return Math.round(humidity)
 }
+/**
+ * Signal digital détection d'eau sur P0
+ * 
+ * Signal analogique humidité de l'eau sur P1
+ * 
+ * Fonction de conversion pour l'humidité
+ */
 let humidity = 0
 let MOISTURE_WATER = 0
 let MOISTURE_AIR = 0
